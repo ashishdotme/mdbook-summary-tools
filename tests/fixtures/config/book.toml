@@ -1,0 +1,15 @@
+[book]
+src = "."
+title = "Wiki"
+
+[preprocessor.autosummary]
+index-name = "legacy-index.md"
+ignore-hidden = true
+
+[tool.mdbook-generate-summary]
+index-names = ["readme.md", "index.md"]
+ignore-hidden = false
+
+[tool.mdbook-generate-summary.homepage]
+path = "readme.md"
+title = "wiki.ashish.me"
