@@ -2,6 +2,8 @@
 name = "mdbook-summary-tools"
 version = "0.1.0"
 edition = "2024"
+description = "Generate SUMMARY.md files for mdBook projects"
+license = "MPL-2.0"
 
 [dependencies]
 anyhow = "1.0.100"
