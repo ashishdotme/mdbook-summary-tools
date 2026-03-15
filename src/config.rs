@@ -109,7 +109,7 @@ pub fn load_config(path: impl AsRef<Path>) -> Result<Config> {
         }
     }
 
-    if let Some(native) = parsed.tool.and_then(|tool| tool.mdbook_generate_summary) {
+    if let Some(native) = parsed.tool.and_then(|tool| tool.mdbook_summary_tools) {
         if let Some(summary_path) = native.summary_path {
             config.summary_path = summary_path;
         }
@@ -189,9 +189,9 @@ struct AutosummaryCompat {
 
 #[derive(Debug, Deserialize)]
 struct ToolSection {
-    #[serde(rename = "mdbook-generate-summary")]
+    #[serde(rename = "mdbook-summary-tools")]
     #[serde(default)]
-    mdbook_generate_summary: Option<NativeConfig>,
+    mdbook_summary_tools: Option<NativeConfig>,
 }
 
 #[derive(Debug, Deserialize)]

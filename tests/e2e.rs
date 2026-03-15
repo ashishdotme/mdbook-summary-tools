@@ -2,7 +2,7 @@
 fn e2e_generate_creates_expected_summary_for_realistic_book() {
     let fixture_dir = std::path::Path::new("tests/fixtures/e2e");
 
-    let output = assert_cmd::Command::cargo_bin("mdbook-generate-summary")
+    let output = assert_cmd::Command::cargo_bin("mdbook-summary-tools")
         .unwrap()
         .current_dir(fixture_dir)
         .args(["generate", "--stdout"])

@@ -331,20 +331,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "mdbook-generate-summary"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "assert_cmd",
- "clap",
- "globset",
- "insta",
- "mdbook-summary",
- "serde",
- "toml",
-]
-
-[[package]]
 name = "mdbook-summary"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -356,6 +342,20 @@ dependencies = [
  "pulldown-cmark",
  "serde",
  "tracing",
+]
+
+[[package]]
+name = "mdbook-summary-tools"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "assert_cmd",
+ "clap",
+ "globset",
+ "insta",
+ "mdbook-summary",
+ "serde",
+ "toml",
 ]
 
 [[package]]

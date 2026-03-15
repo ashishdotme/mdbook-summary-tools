@@ -6,10 +6,10 @@ title = "Wiki"
 index-name = "legacy-index.md"
 ignore-hidden = true
 
-[tool.mdbook-generate-summary]
+[tool.mdbook-summary-tools]
 index-names = ["readme.md", "index.md"]
 ignore-hidden = false
 
-[tool.mdbook-generate-summary.homepage]
+[tool.mdbook-summary-tools.homepage]
 path = "readme.md"
 title = "wiki.ashish.me"

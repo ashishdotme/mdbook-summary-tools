@@ -1,4 +1,4 @@
-use mdbook_generate_summary::titles::resolve_title;
+use mdbook_summary_tools::titles::resolve_title;
 
 #[test]
 fn title_resolution_uses_frontmatter_then_h1_then_filename() {

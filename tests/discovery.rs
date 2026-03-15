@@ -1,4 +1,4 @@
-use mdbook_generate_summary::{config::load_config, discovery::discover_book};
+use mdbook_summary_tools::{config::load_config, discovery::discover_book};
 
 #[test]
 fn discovery_excludes_configured_directories_and_dedupes_homepage() {

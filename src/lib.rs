@@ -11,7 +11,7 @@ pub mod validate;
 pub mod writeback;
 
 #[derive(Debug, Parser)]
-#[command(name = "mdbook-generate-summary")]
+#[command(name = "mdbook-summary-tools")]
 #[command(about = "Generate SUMMARY.md files for mdBook projects")]
 pub struct Cli {
     #[arg(long, global = true)]

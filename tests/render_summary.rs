@@ -1,4 +1,4 @@
-use mdbook_generate_summary::{
+use mdbook_summary_tools::{
     config::load_config, discovery::discover_book, render::render_summary,
 };
 

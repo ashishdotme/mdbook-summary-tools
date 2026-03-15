@@ -1,6 +1,6 @@
 use anyhow::bail;
 use clap::Parser;
-use mdbook_generate_summary::{
+use mdbook_summary_tools::{
     Cli, Command, GenerateArgs, config,
     writeback::{build_summary, diff_summaries, read_summary, summary_output_path, write_summary},
 };

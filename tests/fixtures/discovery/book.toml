@@ -1,10 +1,10 @@
 [book]
 src = "."
 
-[tool.mdbook-generate-summary]
+[tool.mdbook-summary-tools]
 index-names = ["readme.md"]
 exclude = ["attachments/**"]
 
-[tool.mdbook-generate-summary.homepage]
+[tool.mdbook-summary-tools.homepage]
 path = "readme.md"
 title = "wiki.ashish.me"

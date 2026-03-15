@@ -1,4 +1,4 @@
-use mdbook_generate_summary::validate::validate_summary;
+use mdbook_summary_tools::validate::validate_summary;
 
 #[test]
 fn validator_rejects_invalid_summary_output() {

@@ -1,4 +1,4 @@
-use mdbook_generate_summary::config::load_config;
+use mdbook_summary_tools::config::load_config;
 
 #[test]
 fn native_config_overrides_autosummary_compat_values() {
