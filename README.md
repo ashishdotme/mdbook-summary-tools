@@ -2,6 +2,11 @@
 
 Generate `SUMMARY.md` files for `mdBook` projects.
 
+## Install
+
+```bash
+cargo install mdbook-summary-tools --version 0.1.0
+```
 
 ## Commands
 
@@ -14,9 +19,13 @@ mdbook-summary-tools print-config
 
 ## Configuration
 
-Native configuration lives in `book.toml` under `[tool.mdbook-summary-tools]`.
+Example `mdbook-summary-tools.toml`:
 
 ```toml
+[book]
+src = "."
+title = "Wiki"
+
 [tool.mdbook-summary-tools]
 index-names = ["readme.md", "index.md"]
 exclude = ["attachments/**", "book/**"]
@@ -31,4 +40,10 @@ This generates a homepage entry like:
 
 ```md
 [wiki.ashish.me](<readme.md>)
+```
+
+Generate a summary with:
+
+```bash
+mdbook-summary-tools generate --book . --config mdbook-summary-tools.toml
 ```
